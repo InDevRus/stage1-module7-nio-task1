@@ -47,6 +47,7 @@ public class FileReader {
             case PHONE_FIELD:
                 profile.setPhone(Long.parseLong(value));
                 break;
+            default:
         }
     }
 
