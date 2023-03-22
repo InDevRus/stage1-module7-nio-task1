@@ -35,10 +35,18 @@ public class FileReader {
 
     private void updateProfile(Profile profile, String fieldName, String value) {
         switch (fieldName) {
-            case NAME_FIELD -> profile.setName(value);
-            case AGE_FIELD -> profile.setAge(Integer.parseInt(value));
-            case EMAIL_FIELD -> profile.setEmail(value);
-            case PHONE_FIELD -> profile.setPhone(Long.parseLong(value));
+            case NAME_FIELD:
+                profile.setName(value);
+                break;
+            case AGE_FIELD:
+                profile.setAge(Integer.parseInt(value));
+                break;
+            case EMAIL_FIELD:
+                profile.setEmail(value);
+                break;
+            case PHONE_FIELD:
+                profile.setPhone(Long.parseLong(value));
+                break;
         }
     }
 
